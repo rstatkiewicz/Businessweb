@@ -1,69 +1,84 @@
-        /*body {
+    /*body {
     font-family: 'Saira Semi Condensed', sans-serif;
     font-family: 'Saira', sans-serif;
 }
 */
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        header {
-            height: 90vh;
-            position: relative;
-            background-color: #29a6dc;
-        }
-        
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        height: 100vh;
+        position: relative;
+        background-color: #29a6dc;
+        overflow: hidden;
+    }
+    
+    header img {
+        position: absolute;
+        height: 50%;
+        bottom: 0;
+        right: 0;
+    }
+    
+    section {
+        min-height: 100vh;
+    }
+    
+    header>* {
+        position: absolute;
+    }
+    
+    header div.welcome {
+        top: 7%;
+        left: 5%;
+        right: 5%;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Saira Condensed", sans-serif;
+    }
+    
+    header h1 {
+        font-size: 20px;
+        margin-top: 17px;
+    }
+    
+    header h2 {
+        font-weight: normal;
+        font-size: 20px;
+    }
+    
+    header button {
+        line-height: 32px;
+        font-family: "Saira", sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        padding: 0 20px;
+        text-transform: uppercase;
+        color: white;
+        background-color: transparent;
+        border: 2px solid white;
+    }
+    
+    @media (orientation:landscape) {
         header img {
             position: absolute;
-            height: 50%;
+            height: 80%;
             bottom: 0;
-            right: 0;
+            right: -4%;
         }
-        
-        section {
-            min-height: 100vh;
-        }
-        
-        header>* {
-            position: absolute;
-        }
-        
-        header .welcome {
-            top: 7%;
+        header div.welcome {
+            top: 15%;
             left: 5%;
-            right: 5%;
+            right: 50%;
         }
-        
-        header div {
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-            text-align: center;
-            text-transform: uppercase;
-            font-family: "Saira Condensed", sans-serif;
-        }
-        
-        header h1 {
-            font-size: 20px;
-            margin-top: 17px;
-        }
-        
-        header h2 {
-            font-weight: normal;
-            font-size: 20px;
-        }
-        
         header button {
-            line-height: 32px;
-            font-family: "Saira", sans-serif;
-            font-weight: 300;
-            font-size: 12px;
-            padding: 0 20px;
-            text-transform: uppercase;
-            color: white;
-            background-color: transparent;
-            border: 2px solid white;
+            margin-top: 40px;
         }
+    }
